@@ -7,4 +7,5 @@ dependencies = [
     "pydantic",
     "polars",
     "black>=25.1.0",
+    "apache-airflow>=3.0.4",
 ]
