@@ -1,6 +1,6 @@
 import polars as pl
 
-from models import HappinessRecord
+from pipeline.models import HappinessRecord
 
 
 # TODO add extraction of a JSON from some API endpoint

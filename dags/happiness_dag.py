@@ -13,4 +13,5 @@ with DAG(
     run_etl = PythonOperator(
         task_id="run_world_happiness_etl",
         python_callable=run_pipeline,
+        op_kwargs={"url": "/opt/airflow/data/world-happiness/2015.csv"}
     )
