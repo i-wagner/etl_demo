@@ -10,6 +10,7 @@ with DAG(
     schedule="@daily",
     catchup=False,
 ) as dag:
+    # TODO break this up in multiple tasks
     run_etl = PythonOperator(
         task_id="run_world_happiness_etl",
         python_callable=run_pipeline,
