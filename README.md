@@ -41,6 +41,11 @@ The Airflow GUI can be accessed via http://localhost:8080/, using `airflow` `air
 
 When done, run `docker compose down`
 
+(5. Local runs)
+
+The pipeline can be run locally, without the need to spin up the Docker container, using `PYTHONPATH=. uv run ./pipeline/main.py`
+`PYTHONPATH=.` needs to run to add the entire folder to the Python path, otherwise the pipeline module won't be found.
+
 ---
 
 ## Repository structure
@@ -64,3 +69,4 @@ etl_demo/
 │    ├─ models.py # Schema definition for source data
 │    ├─ main.py  # Entrypoint
 ```
+
