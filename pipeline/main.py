@@ -10,6 +10,6 @@ def run_pipeline(url: str):
     load_data_to_sqlite(df)
 
 
-URL = "/opt/airflow/data/world-happiness/2015.csv"
+URL = "./data/world-happiness/2015.csv"
 if __name__ == "__main__":
     run_pipeline(url=URL)
