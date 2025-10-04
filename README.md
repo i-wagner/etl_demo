@@ -4,7 +4,7 @@ This repository contains a lightweight demo, showcasing how to implement a Pytho
 
 Data is extracted from a local `.csv` file, validated, transformed and loaded into a local SQLite database. The pipeline is orchestrated and scheduled as a Airflow DAG. Airflow itself is containerized within a Docker container.
 
-Note: `docker-compose.yml` is the sample configuration, provided by Airflow. It is not ready for production, as it hardcodes some secrets
+Note: `docker-compose.yml` contains a minimal configuration with all mandatory components to run Airflow. It is based on the [official sample file](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html#fetching-docker-compose-yaml), provided by Airflow, and is not optimized for production environments.
 
 ---
 
